@@ -2,8 +2,8 @@ const path = require('path')
 module.exports = {
   version: "2.0",
   title: "artist",
-  description: "",
-  icon: "icon.png",
+  description: "Artist is a training-free text-driven image stylization method. You give an image and input a prompt describing the desired style, Artist give you the stylized image in that style. The detail of the original image and the style you provide is harmonically integrated https://huggingface.co/spaces/fffiloni/Artist",
+  icon: "artist.gif",
   menu: async (kernel, info) => {
     let installed = info.exists("app/env")
     let running = {
