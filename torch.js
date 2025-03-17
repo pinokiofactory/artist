@@ -30,7 +30,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch-directml torchvision torchaudio"
+        "message": "pip install torch-directml torchvision torchaudio numpy==1.26.4"
       }
     },
     // windows cpu
@@ -40,7 +40,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1"
+        "message": "pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cpu"
       }
     },
     // apple mac
